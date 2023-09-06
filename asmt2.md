@@ -133,3 +133,46 @@ $$
     &= -16241
 \end{align*}
 $$
+
+## *Problem 5* (1.5 point)
+
+### (1) Please insert the screenshot of your MARS register components. (0.25 point)
+
+![](assets/Screenshot%202023-09-06%20at%201.11.27%20AM.png)
+
+### (2) What is the data in Register $v0? Write it down in hexadecimal. (In the example above, the data is 0xa). Your answer should start with “0x” which indicates it is a hexadecimal number. (0.25 point)
+
+Data in Register `$v0` is `0x0000000a`.
+
+### (3) Can you convert the data in Register $v0 to decimal? Can you convert it to 32-bit binary? (Your answer should start with “0b” which indicates it is a binary number) (0.25 point)
+
+`0x0000000a` in decimal is $10$.
+
+Since $10 = 1(2^3) + 0(2^2) + 1(2^1) + 0(2^0)$. In 32-bit binary, $10$ is `0b 0000 0000 0000 0000 0000 0000 0000 1010`.
+
+### (4) Can you convert the data in Register $gp to 32-bit binary? (0.25 point)
+
+Data in Register `$gp` is `0x10008000`.
+
+For each hexadecimal digit, there are eight bits. There are only two non-zero hexadecimal digits, namely `1` and `8`.
+
+Using a reference table, we convert `0x1` and `0x8` to binary as `0b0001` and `0b1000`, respectively.
+
+|  Dec  |  Bin   |  Hex  |
+| :---: | :----: | :---: |
+|  $1$  | `0001` |  `1`  |
+|  $8$  | `1000` |  `8`  |
+
+The rest are zeroes, so we just replace `1` and `8`. So, `0b 1000 8000` is `0b 0001 0000 0000 0000 1000 0000 0000 0000`.
+
+### (5)  Please insert your MARS data segment screenshot here (0.1 point)
+
+![](assets/Screenshot%202023-09-06%20at%208.13.25%20AM.png)
+
+### (6)  Please write down the 8 digit hexadecimal data saved in the memory address 0x10010018 according to your screenshot (0.2 point)
+
+The data stored at `0x10010018` is `0x00000000`.
+
+### (7)  Please write down the 8 digit hexadecimal data saved in the memory address 0x10010024 according to your screenshot. (0.2 point)
+
+The data stored at `0x10010024` is `0x00000000`.

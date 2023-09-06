@@ -11,179 +11,7 @@
       
       <style>
       @import url("https://use.typekit.net/hvv2qyx.css");
-pre {
-  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-  line-height: 1.5;
-  tab-size: 4;
-  hyphens: none;
-  color: #F8F8F2;
-  background-color: #323232 !important;
-  border: #515151;
-  border-radius: 3px;
-}
-pre[class*="language-"] {
-  padding: 1em;
-}
-code[class*="language-"] .token.comment,
-pre[class*="language-"] .token.comment,
-code[class*="language-"] .token.prolog,
-pre[class*="language-"] .token.prolog,
-code[class*="language-"] .token.doctype,
-pre[class*="language-"] .token.doctype,
-code[class*="language-"] .token.cdata,
-pre[class*="language-"] .token.cdata {
-  color: #75715E;
-}
-code[class*="language-"] .token.punctuation,
-pre[class*="language-"] .token.punctuation {
-  color: inherit;
-}
-code[class*="language-"] .namespace,
-pre[class*="language-"] .namespace {
-  opacity: .7;
-}
-code[class*="language-"] .token.property,
-pre[class*="language-"] .token.property,
-code[class*="language-"] .token.tag,
-pre[class*="language-"] .token.tag,
-code[class*="language-"] .token.boolean,
-pre[class*="language-"] .token.boolean,
-code[class*="language-"] .token.number,
-pre[class*="language-"] .token.number,
-code[class*="language-"] .token.function-name,
-pre[class*="language-"] .token.function-name,
-code[class*="language-"] .token.constant,
-pre[class*="language-"] .token.constant,
-code[class*="language-"] .token.symbol,
-pre[class*="language-"] .token.symbol,
-code[class*="language-"] .token.deleted,
-pre[class*="language-"] .token.deleted {
-  color: #AE81FF;
-}
-code[class*="language-"] .token.selector,
-pre[class*="language-"] .token.selector,
-code[class*="language-"] .token.attr-name,
-pre[class*="language-"] .token.attr-name,
-code[class*="language-"] .token.string,
-pre[class*="language-"] .token.string,
-code[class*="language-"] .token.char,
-pre[class*="language-"] .token.char,
-code[class*="language-"] .token.builtin,
-pre[class*="language-"] .token.builtin,
-code[class*="language-"] .token.inserted,
-pre[class*="language-"] .token.inserted {
-  color: #E6DB74;
-}
-code[class*="language-"] .token.entity,
-pre[class*="language-"] .token.entity {
-  color: #AE81FF;
-}
-code[class*="language-"] .token.url,
-pre[class*="language-"] .token.url {
-  color: #CCC;
-}
-code[class*="language-"] .token.operator,
-pre[class*="language-"] .token.operator {
-  color: #F92672;
-}
-code[class*="language-"] .token.atrule,
-pre[class*="language-"] .token.atrule,
-code[class*="language-"] .token.attr-value,
-pre[class*="language-"] .token.attr-value,
-code[class*="language-"] .token.keyword,
-pre[class*="language-"] .token.keyword {
-  color: #66D9EF;
-}
-code[class*="language-"] .token.function,
-pre[class*="language-"] .token.function {
-  color: #A6E22E;
-}
-code[class*="language-"] .token.class-name,
-pre[class*="language-"] .token.class-name {
-  color: #A6E22E;
-}
-code[class*="language-"] .token.regex,
-pre[class*="language-"] .token.regex {
-  color: #AE81FF;
-}
-code[class*="language-"] .token.important,
-pre[class*="language-"] .token.important,
-code[class*="language-"] .token.variable,
-pre[class*="language-"] .token.variable {
-  color: #A6E22E;
-}
-code[class*="language-"] .token.important,
-pre[class*="language-"] .token.important,
-code[class*="language-"] .token.bold,
-pre[class*="language-"] .token.bold {
-  font-weight: bold;
-}
-code[class*="language-"] .token.italic,
-pre[class*="language-"] .token.italic {
-  font-style: italic;
-}
-code[class*="language-"] .token.entity,
-pre[class*="language-"] .token.entity {
-  cursor: help;
-}
-
-/* highlight */
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-pre[data-line] .line-highlight-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  display: block;
-  width: 100%;
-}
-pre[data-line] .line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: rgba(153, 122, 102, 0.08);
-  background: linear-gradient(to right, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
-}
-pre[data-line] .line-highlight:before,
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: .4em;
-  left: .6em;
-  min-width: 1em;
-  padding: 0 .5em;
-  background-color: rgba(153, 122, 102, 0.4);
-  color: #f5f2f0;
-  font: bold 65%/1.5 sans-serif;
-  text-align: center;
-  vertical-align: .3em;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px white;
-}
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-end);
-  top: auto;
-  bottom: .4em;
-}
-html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#F8F8F2;background-color:#282828;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#fff}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#dbdbbd}html body strong{color:#fff}html body del{color:#dbdbbd}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#dbdbbd;background-color:#3c3c3c;border-left:4px solid #515151}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#515151;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#fff}html body table td,html body table th{border:1px solid #515151;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#fff;background-color:#3c3c3c;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#515151;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#fff;border:1px solid #515151;border-bottom:2px solid #424242;padding:2px 4px;background-color:#3c3c3c;border-radius:3px}@media print{html body{background-color:#282828}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#fff;page-break-after:avoid}html body blockquote{color:#dbdbbd}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#f8f8f2;background-color:#323232!important;border:#515151;border-radius:3px}pre[class*=language-]{padding:1em}code[class*=language-] .token.cdata,code[class*=language-] .token.comment,code[class*=language-] .token.doctype,code[class*=language-] .token.prolog,pre[class*=language-] .token.cdata,pre[class*=language-] .token.comment,pre[class*=language-] .token.doctype,pre[class*=language-] .token.prolog{color:#75715e}code[class*=language-] .token.punctuation,pre[class*=language-] .token.punctuation{color:inherit}code[class*=language-] .namespace,pre[class*=language-] .namespace{opacity:.7}code[class*=language-] .token.boolean,code[class*=language-] .token.constant,code[class*=language-] .token.deleted,code[class*=language-] .token.function-name,code[class*=language-] .token.number,code[class*=language-] .token.property,code[class*=language-] .token.symbol,code[class*=language-] .token.tag,pre[class*=language-] .token.boolean,pre[class*=language-] .token.constant,pre[class*=language-] .token.deleted,pre[class*=language-] .token.function-name,pre[class*=language-] .token.number,pre[class*=language-] .token.property,pre[class*=language-] .token.symbol,pre[class*=language-] .token.tag{color:#ae81ff}code[class*=language-] .token.attr-name,code[class*=language-] .token.builtin,code[class*=language-] .token.char,code[class*=language-] .token.inserted,code[class*=language-] .token.selector,code[class*=language-] .token.string,pre[class*=language-] .token.attr-name,pre[class*=language-] .token.builtin,pre[class*=language-] .token.char,pre[class*=language-] .token.inserted,pre[class*=language-] .token.selector,pre[class*=language-] .token.string{color:#e6db74}code[class*=language-] .token.entity,pre[class*=language-] .token.entity{color:#ae81ff}code[class*=language-] .token.url,pre[class*=language-] .token.url{color:#ccc}code[class*=language-] .token.operator,pre[class*=language-] .token.operator{color:#f92672}code[class*=language-] .token.atrule,code[class*=language-] .token.attr-value,code[class*=language-] .token.keyword,pre[class*=language-] .token.atrule,pre[class*=language-] .token.attr-value,pre[class*=language-] .token.keyword{color:#66d9ef}code[class*=language-] .token.function,pre[class*=language-] .token.function{color:#a6e22e}code[class*=language-] .token.class-name,pre[class*=language-] .token.class-name{color:#a6e22e}code[class*=language-] .token.regex,pre[class*=language-] .token.regex{color:#ae81ff}code[class*=language-] .token.important,code[class*=language-] .token.variable,pre[class*=language-] .token.important,pre[class*=language-] .token.variable{color:#a6e22e}code[class*=language-] .token.bold,code[class*=language-] .token.important,pre[class*=language-] .token.bold,pre[class*=language-] .token.important{font-weight:700}code[class*=language-] .token.italic,pre[class*=language-] .token.italic{font-style:italic}code[class*=language-] .token.entity,pre[class*=language-] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#f8f8f2;background-color:#282828;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#fff}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#dbdbbd}html body strong{color:#fff}html body del{color:#dbdbbd}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#dbdbbd;background-color:#3c3c3c;border-left:4px solid #515151}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#515151;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#fff}html body table td,html body table th{border:1px solid #515151;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em!important;color:#fff;background-color:#3c3c3c;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em!important;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em!important;line-height:1.45;border:#515151;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#fff;border:1px solid #515151;border-bottom:2px solid #424242;padding:2px 4px;background-color:#3c3c3c;border-radius:3px}@media print{html body{background-color:#282828}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#fff;page-break-after:avoid}html body blockquote{color:#dbdbbd}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([for=preview]) .code-chunk .btn-group{display:none}.markdown-preview:not([for=preview]) .code-chunk .status{display:none}.markdown-preview:not([for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
 /* Please visit the URL below for more information: */
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
@@ -667,12 +495,12 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
       </style>
     </head>
     <body for="html-export">
-      <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="assignment-2">Assignment 2</h1>
+      <div class="crossnote markdown-preview  ">
+      <h1 class="crossnote-header" id="assignment-2">Assignment 2</h1>
 
-<h2 class="mume-header" id="problem-1-15-points-show-all-intermediate-steps-no-intermediate-steps-will-receive-0-point"><em>Problem 1</em> (1.5 points) (Show all intermediate steps. No intermediate steps will receive 0 point)</h2>
+<h2 class="crossnote-header" id="problem-1-15-points-show-all-intermediate-steps-no-intermediate-steps-will-receive-0-point"><em>Problem 1</em> (1.5 points) (Show all intermediate steps. No intermediate steps will receive 0 point)</h2>
 
-<h3 class="mume-header" id="convert-integer--3-to-8-digit-tc-binary--05-point">Convert integer -3 to 8 digit TC Binary.  (0.5 point)</h3>
+<h3 class="crossnote-header" id="convert-integer--3-to-8-digit-tc-binary--05-point">Convert integer -3 to 8 digit TC Binary.  (0.5 point)</h3>
 
 <p>First, convert <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> to binary: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>=</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo></mrow><annotation encoding="application/x-tex">3 = 2^1 + 2^0=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span></span> <code>0b 0000 0011</code>.</p>
 <p>Then negate it:</p>
@@ -682,7 +510,7 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
   ---------------
     0b 1111 1101    (-3)
 </code></pre><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">-3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">3</span></span></span></span> in an 8-bit two’s complement binary is <code>0b 1111 1101</code>.</p>
-<h3 class="mume-header" id="convert-decimal--1-to-8-digit-tc-hex-05-point">Convert decimal -1 to 8 digit TC Hex. (0.5 point)</h3>
+<h3 class="crossnote-header" id="convert-decimal--1-to-8-digit-tc-hex-05-point">Convert decimal -1 to 8 digit TC Hex. (0.5 point)</h3>
 
 <p>First, convert <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> to hexadecimal: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>0</mn></msup><mo stretchy="false">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">1 = 1(16^0) =</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span></span> <code>0x 0000 0001</code>.</p>
 <p>Then, negate it:</p>
@@ -694,7 +522,7 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
   ---------------
     0x FFFF FFFF    (-1)
 </code></pre><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span> in an 8-digit two’s complement hexadecimal is <code>0x FFFF FFFF</code>.</p>
-<h3 class="mume-header" id="convert-integer--255-to-8-digit-hex-hint-you-can-either-convert-255-to-hex-then-negate-with-tc-hex-rule-or-you-can-convert--255-to-tc-bin-then-convert-it-to-hex-05-point">Convert integer -255 to 8 digit Hex (Hint: You can either convert 255 to Hex then negate with TC Hex rule, or you can convert -255 to TC Bin, then convert it to Hex) (0.5 point)</h3>
+<h3 class="crossnote-header" id="convert-integer--255-to-8-digit-hex-hint-you-can-either-convert-255-to-hex-then-negate-with-tc-hex-rule-or-you-can-convert--255-to-tc-bin-then-convert-it-to-hex-05-point">Convert integer -255 to 8 digit Hex (Hint: You can either convert 255 to Hex then negate with TC Hex rule, or you can convert -255 to TC Bin, then convert it to Hex) (0.5 point)</h3>
 
 <p>I’m doing the former, so: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>255</mn><mo>=</mo><mn>15</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>1</mn></msup><mo stretchy="false">)</mo><mo>+</mo><mn>15</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>0</mn></msup><mo stretchy="false">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">255 = 15(16^1) + 15(16^0) =</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">255</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">15</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">15</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span></span> <code>0x 0000 00FF</code>.</p>
 <pre data-role="codeBlock" data-info="" class="language-"><code>    0x FFFF FFFF
@@ -705,11 +533,11 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
   ---------------
     0x FFFF FF01    (-255)
 </code></pre><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>255</mn></mrow><annotation encoding="application/x-tex">-255</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">255</span></span></span></span> in an 8-digit two’s complement hexadecimal is <code>0x FFFF FF01</code>.</p>
-<h2 class="mume-header" id="problem-2-convert-the-2-digit-twos-complement-hexadecimal-integer-0x6e-to-decimal-show-all-intermediate-steps-clearly-05-point"><em>Problem 2</em> Convert the 2-digit two’s complement hexadecimal integer 0x6e to decimal. Show all intermediate steps clearly. (0.5 point)</h2>
+<h2 class="crossnote-header" id="problem-2-convert-the-2-digit-twos-complement-hexadecimal-integer-0x6e-to-decimal-show-all-intermediate-steps-clearly-05-point"><em>Problem 2</em> Convert the 2-digit two’s complement hexadecimal integer 0x6e to decimal. Show all intermediate steps clearly. (0.5 point)</h2>
 
 <p>First, we note that <code>0x6e</code> is a positive integer because the leading digit here is less than eight. So, we can just convert it to decimal where <code>E</code> correspond to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn></mrow><annotation encoding="application/x-tex">14</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">14</span></span></span></span>.</p>
 <p>As such, <code>0x6e</code> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>6</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>1</mn></msup><mo stretchy="false">)</mo><mo>+</mo><mn>14</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>0</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>110</mn></mrow><annotation encoding="application/x-tex">=6(16^1) + 14(16^0) = 110</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">6</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">14</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">110</span></span></span></span>.</p>
-<h2 class="mume-header" id="problem-3-convert-the-decimal-integer--61-to-an-8-bit-twos-complement-binary-integer--show-all-intermediate-steps-clearly-05-point"><em>Problem 3</em> Convert the decimal integer -61 to an 8-bit two’s complement binary integer.  Show all intermediate steps clearly. (0.5 point)</h2>
+<h2 class="crossnote-header" id="problem-3-convert-the-decimal-integer--61-to-an-8-bit-twos-complement-binary-integer--show-all-intermediate-steps-clearly-05-point"><em>Problem 3</em> Convert the decimal integer -61 to an 8-bit two’s complement binary integer.  Show all intermediate steps clearly. (0.5 point)</h2>
 
 <p>First, convert <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>61</mn></mrow><annotation encoding="application/x-tex">61</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">61</span></span></span></span> into hexadecimal: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>61</mn><mo>=</mo><mn>3</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>1</mn></msup><mo stretchy="false">)</mo><mo>+</mo><mn>13</mn><mo stretchy="false">(</mo><mn>1</mn><msup><mn>6</mn><mn>0</mn></msup><mo stretchy="false">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">61 = 3(16^1) + 13(16^0)=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">61</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">13</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span></span> <code>0x 0000 003D</code>.</p>
 <p>Using a reference table, we convert <code>0x 0000 003D</code> to binary: <code>0b 0011 1101</code>.</p>
@@ -741,7 +569,7 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
   ---------------
     0b 1100 0011    (-61)
 </code></pre><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>61</mn></mrow><annotation encoding="application/x-tex">-61</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord">61</span></span></span></span> in an 8-bit two’s complement binary is <code>0b 1100 0011</code>.</p>
-<h2 class="mume-header" id="problem-4-youre-given-two-4-digit-2s-complement-hexadecimal-numbers-x--0xa731-and-y--0xe6a2-compute-x-y-remember-to-indicate-overflow-if-it-occurs-show-all-intermediate-steps-clearly-1-point"><em>Problem 4</em> You’re given two 4-digit, 2’s complement hexadecimal numbers X = <code>0xa731</code> and Y = <code>0xe6a2</code>. Compute X-Y. Remember to indicate overflow if it occurs. Show all intermediate steps clearly. (1 point)</h2>
+<h2 class="crossnote-header" id="problem-4-youre-given-two-4-digit-2s-complement-hexadecimal-numbers-x--0xa731-and-y--0xe6a2-compute-x-y-remember-to-indicate-overflow-if-it-occurs-show-all-intermediate-steps-clearly-1-point"><em>Problem 4</em> You’re given two 4-digit, 2’s complement hexadecimal numbers X = <code>0xa731</code> and Y = <code>0xe6a2</code>. Compute X-Y. Remember to indicate overflow if it occurs. Show all intermediate steps clearly. (1 point)</h2>
 
 <p>First, negate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> to find <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">-Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span>.</p>
 <pre data-role="codeBlock" data-info="" class="language-"><code>    0x FFFF
@@ -758,7 +586,7 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
   ----------
     0x C08F
 </code></pre><p>In a 4-digit two’s complement hexadecimal system, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>−</mo><mi>Y</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">X-Y=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span></span> <code>0x C08F</code>.</p>
-<h3 class="mume-header" id="sanity-check">Sanity check</h3>
+<h3 class="crossnote-header" id="sanity-check">Sanity check</h3>
 
 <table>
 <thead>
@@ -794,6 +622,54 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
     &amp;= -22735 + 6494 \\
     &amp;= -16241
 \end{align*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:7.5em;vertical-align:-3.5em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4em;"><span style="top:-6.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-4.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"></span></span><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"></span></span><span style="top:-1.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"></span></span><span style="top:-0.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.5em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4em;"><span style="top:-6.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">−</span><span class="mord">22735</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">6494</span><span class="mclose">)</span></span></span><span style="top:-4.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">−</span><span class="mord">22735</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">6494</span></span></span><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose">)</span></span></span><span style="top:-1.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">−</span><span class="mord">22735</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">6494</span></span></span><span style="top:-0.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">−</span><span class="mord">16241</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.5em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<h2 class="crossnote-header" id="problem-5-15-point"><em>Problem 5</em> (1.5 point)</h2>
+
+<h3 class="crossnote-header" id="1-please-insert-the-screenshot-of-your-mars-register-components-025-point">(1) Please insert the screenshot of your MARS register components. (0.25 point)</h3>
+
+<p><img src="assets/Screenshot%202023-09-06%20at%201.11.27%20AM.png" alt=""></p>
+<h3 class="crossnote-header" id="2-what-is-the-data-in-register-v0-write-it-down-in-hexadecimal-in-the-example-above-the-data-is-0xa-your-answer-should-start-with-0x-which-indicates-it-is-a-hexadecimal-number-025-point">(2) What is the data in Register $v0? Write it down in hexadecimal. (In the example above, the data is 0xa). Your answer should start with “0x” which indicates it is a hexadecimal number. (0.25 point)</h3>
+
+<p>Data in Register <code>$v0</code> is <code>0x0000000a</code>.</p>
+<h3 class="crossnote-header" id="3-can-you-convert-the-data-in-register-v0-to-decimal-can-you-convert-it-to-32-bit-binary-your-answer-should-start-with-0b-which-indicates-it-is-a-binary-number-025-point">(3) Can you convert the data in Register $v0 to decimal? Can you convert it to 32-bit binary? (Your answer should start with “0b” which indicates it is a binary number) (0.25 point)</h3>
+
+<p><code>0x0000000a</code> in decimal is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span>.</p>
+<p>Since <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><msup><mn>2</mn><mn>3</mn></msup><mo stretchy="false">)</mo><mo>+</mo><mn>0</mn><mo stretchy="false">(</mo><msup><mn>2</mn><mn>2</mn></msup><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">(</mo><msup><mn>2</mn><mn>1</mn></msup><mo stretchy="false">)</mo><mo>+</mo><mn>0</mn><mo stretchy="false">(</mo><msup><mn>2</mn><mn>0</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">10 = 1(2^3) + 0(2^2) + 1(2^1) + 0(2^0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>. In 32-bit binary, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span> is <code>0b 0000 0000 0000 0000 0000 0000 0000 1010</code>.</p>
+<h3 class="crossnote-header" id="4-can-you-convert-the-data-in-register-gp-to-32-bit-binary-025-point">(4) Can you convert the data in Register $gp to 32-bit binary? (0.25 point)</h3>
+
+<p>Data in Register <code>$gp</code> is <code>0x10008000</code>.</p>
+<p>For each hexadecimal digit, there are eight bits. There are only two non-zero hexadecimal digits, namely <code>1</code> and <code>8</code>.</p>
+<p>Using a reference table, we convert <code>0x1</code> and <code>0x8</code> to binary as <code>0b0001</code> and <code>0b1000</code>, respectively.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dec</th>
+<th style="text-align:center">Bin</th>
+<th style="text-align:center">Hex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></td>
+<td style="text-align:center"><code>0001</code></td>
+<td style="text-align:center"><code>1</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn></mrow><annotation encoding="application/x-tex">8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span></span></span></span></td>
+<td style="text-align:center"><code>1000</code></td>
+<td style="text-align:center"><code>8</code></td>
+</tr>
+</tbody>
+</table>
+<p>The rest are zeroes, so we just replace <code>1</code> and <code>8</code>. So, <code>0b 1000 8000</code> is <code>0b 0001 0000 0000 0000 1000 0000 0000 0000</code>.</p>
+<h3 class="crossnote-header" id="5--please-insert-your-mars-data-segment-screenshot-here-01-point">(5)  Please insert your MARS data segment screenshot here (0.1 point)</h3>
+
+<p><img src="assets/Screenshot%202023-09-06%20at%208.13.25%20AM.png" alt=""></p>
+<h3 class="crossnote-header" id="6--please-write-down-the-8-digit-hexadecimal-data-saved-in-the-memory-address-0x10010018-according-to-your-screenshot-02-point">(6)  Please write down the 8 digit hexadecimal data saved in the memory address 0x10010018 according to your screenshot (0.2 point)</h3>
+
+<p>The data stored at <code>0x10010018</code> is <code>0x00000000</code>.</p>
+<h3 class="crossnote-header" id="7--please-write-down-the-8-digit-hexadecimal-data-saved-in-the-memory-address-0x10010024-according-to-your-screenshot-02-point">(7)  Please write down the 8 digit hexadecimal data saved in the memory address 0x10010024 according to your screenshot. (0.2 point)</h3>
+
+<p>The data stored at <code>0x10010024</code> is <code>0x00000000</code>.</p>
 
       </div>
       <div class="md-sidebar-toc">
@@ -842,6 +718,43 @@ html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-
           <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
           <a href="#sanity-check" class="md-toc-link">
             <p>Sanity check</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#problem-5-15-point" class="md-toc-link"><p><em>Problem 5</em> (1.5 point)</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#1-please-insert-the-screenshot-of-your-mars-register-components-025-point" class="md-toc-link">
+            <p>(1) Please insert the screenshot of your MARS register components. (0.25 point)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2-what-is-the-data-in-register-v0-write-it-down-in-hexadecimal-in-the-example-above-the-data-is-0xa-your-answer-should-start-with-0x-which-indicates-it-is-a-hexadecimal-number-025-point" class="md-toc-link">
+            <p>(2) What is the data in Register $v0? Write it down in hexadecimal. (In the example above, the data is 0xa). Your answer should start with “0x” which indicates it is a hexadecimal number. (0.25 point)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#3-can-you-convert-the-data-in-register-v0-to-decimal-can-you-convert-it-to-32-bit-binary-your-answer-should-start-with-0b-which-indicates-it-is-a-binary-number-025-point" class="md-toc-link">
+            <p>(3) Can you convert the data in Register $v0 to decimal? Can you convert it to 32-bit binary? (Your answer should start with “0b” which indicates it is a binary number) (0.25 point)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-can-you-convert-the-data-in-register-gp-to-32-bit-binary-025-point" class="md-toc-link">
+            <p>(4) Can you convert the data in Register $gp to 32-bit binary? (0.25 point)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#5--please-insert-your-mars-data-segment-screenshot-here-01-point" class="md-toc-link">
+            <p>(5)  Please insert your MARS data segment screenshot here (0.1 point)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#6--please-write-down-the-8-digit-hexadecimal-data-saved-in-the-memory-address-0x10010018-according-to-your-screenshot-02-point" class="md-toc-link">
+            <p>(6)  Please write down the 8 digit hexadecimal data saved in the memory address 0x10010018 according to your screenshot (0.2 point)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#7--please-write-down-the-8-digit-hexadecimal-data-saved-in-the-memory-address-0x10010024-according-to-your-screenshot-02-point" class="md-toc-link">
+            <p>(7)  Please write down the 8 digit hexadecimal data saved in the memory address 0x10010024 according to your screenshot. (0.2 point)</p>
 
           </a></div>
         </div>
