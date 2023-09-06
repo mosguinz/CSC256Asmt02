@@ -40,7 +40,7 @@ Then, negate it:
     0x FFFF FFFE    (subtract from 0x FFFF FFFF)
   + 0x 0000 0001    (add one)
   ---------------
-    0x FFFF FFFF    (-255)
+    0x FFFF FFFF    (-1)
 ```
 
 $-1$ in an 8-digit two's complement hexadecimal is `0x FFFF FFFF`.
