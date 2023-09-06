@@ -47,7 +47,7 @@ $-1$ in an 8-digit two's complement hexadecimal is `0x FFFF FFFF`.
 
 ### Convert integer -255 to 8 digit Hex (Hint: You can either convert 255 to Hex then negate with TC Hex rule, or you can convert -255 to TC Bin, then convert it to Hex) (0.5 point)
 
-I'm doing the former, so: $255 = 15(16^1) + 15(15^0) = $ `0x 0000 00FF`.
+I'm doing the former, so: $255 = 15(16^1) + 15(16^0) = $ `0x 0000 00FF`.
 
 ```
     0x FFFF FFFF
